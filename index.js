@@ -3,7 +3,7 @@ const http = require('http').Server(app);
 const io = require('socket.io')(http);
 const mongoose = require('mongoose');
 const mongoDB = 'mongodb://localhost:27017/message-database'
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 50;
 
 const Msg = require('./chatSchema')
 app.get('/', (req, res) => {
